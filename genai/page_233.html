@@ -1,0 +1,108 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Fitbit Charge 6 | Fitness Tracker with Heart Rate Monitoring</title>
+    <style>
+        .product-image {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+        
+        ._1AtVbE {
+            margin-bottom: 10px;
+        }
+        
+        .col-6-12 {
+            flex-basis: 50%;
+        }
+        
+        .col-4-12 {
+            flex-basis: 33.33%;
+        }
+        
+        .price-tag {
+            font-size: 18px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+<div class="product-container">
+    <div class="product-image">
+        <img src="https://via.placeholder.com/400x400?text=Fitbit+Charge+6%2BImage+i" alt="Fitbit Charge 6">
+        <div class="_1AtVbE">₹48,999</div>
+    </div>
+    <section class="product-desc">
+        <h2 class="product-name">Fitbit Charge 6</h2>
+        <p class="price-tag">Rs. ₹48,999 (₹4,999 Off)</p>
+        <div class="_3XtXc5">
+            <span class="col-6-12">4.2/5 (1,600+ Reviews)</span>
+            <span class="col-4-12">Free Shipping | Pay in 4 Instalments</span>
+        </div>
+    </section>
+    <section class="productHighlights">
+        <h3 class="heading">Highlights</h3>
+        <ul>
+            <li>Up to 7 Days Battery Life</li>
+            <li>Heart Rate Monitoring</li>
+            <li>Guided Breathing Sessions</li>
+            <li>Water Resistant Up To 50M</li>
+            <li>Sleep Tracking & Insights</li>
+        </ul>
+    </section>
+    <section class="productDescription">
+        <h3 class="heading">Full Description</h3>
+        <p>The Fitbit Charge 6 is a sleek and stylish fitness tracker that lets you track your daily activity, sleep, and heart rate. With up to 7 days of battery life, you can wear it all day and night without needing to recharge. The device also features guided breathing sessions to help you relax and stress less.</p>
+    </section>
+</div>
+
+<section class="reviews">
+    <h3 class="heading">Customer Reviews (1,600+)</h3>
+    <ul>
+        <li>
+            <img src="https://via.placeholder.com/150x150?text=John+Doe&bg=white" alt="John Doe">
+            <span class="review-rating">4.8/5</span>
+            <p>Works great, easy to use and stylish design.</p>
+        </li>
+        <li>
+            <img src="https://via.placeholder.com/150x150?text=Raj+Sharma&bg=white" alt="Raj Sharma">
+            <span class="review-rating">4.5/5</span>
+            <p>Best fitness tracker I have ever owned, worth every penny.</p>
+        </li>
+        <li>
+            <img src="https://via.placeholder.com/150x150?text=Amit+Kumar&bg=white" alt="Amit Kumar">
+            <span class="review-rating">4.2/5</span>
+            <p>Good product, but battery life could be better.</p>
+        </li>
+    </ul>
+</section>
+
+<script>
+    function renderReviews() {
+        var reviewData = [
+            { name: "John Doe", rating: 4.8, text: "Works great, easy to use and stylish design." },
+            { name: "Raj Sharma", rating: 4.5, text: "Best fitness tracker I have ever owned, worth every penny." },
+            { name: "Amit Kumar", rating: 4.2, text: "Good product, but battery life could be better." }
+        ];
+        
+        var reviewList = document.querySelector(".reviews ul");
+        
+        reviewData.forEach(function(review) {
+            var reviewItem = document.createElement("li");
+            reviewItem.innerHTML = `
+                <img src="https://via.placeholder.com/150x150?text=${review.name}&bg=white" alt="${review.name}">
+                <span class="review-rating">${review.rating}/5</span>
+                <p>${review.text}</p>
+            `;
+            
+            reviewList.appendChild(reviewItem);
+        });
+    }
+    
+    window.onload = function() {
+        renderReviews();
+    };
+</script>
+```

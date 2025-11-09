@@ -1,0 +1,96 @@
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Kindle Paperwhite - E-reader with 8-Inch High-Resolution Display, Wi-Fi Connectivity</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .product-page {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        ._1AtVbE {
+            margin-bottom: 20px;
+        }
+        
+        .col-6-12 {
+            width: calc(50% - 40px);
+        }
+    </style>
+</head>
+<body>
+    <div class="product-page">
+        <section class="_1AtVbE">
+            <h2>Kindle Paperwhite</h2>
+            <p>8-Inch High-Resolution Display, Wi-Fi Connectivity</p>
+            <p>₹48,999 (₹51,499 off)</p>
+            <div class="col-6-12">
+                <img src="https://via.placeholder.com/400x400?text=Kindle+Paperwhite+i1" alt="Kindle Paperwhite i1 Image">
+            </div>
+        </section>
+        
+        <section class="_3fE9WV">
+            <h2>Highlights</h2>
+            <ul>
+                <li>Built-in light for reading in the dark</li>
+                <li>8GB of storage, expandable up to 32GB</li>
+                <li>Access to millions of books, newspapers and magazines</li>
+                <li>Durable design with IPX8 waterproofing</li>
+                <li>Long-lasting battery life up to 6 weeks</li>
+            </ul>
+        </section>
+        
+        <section class="_2Z7eJ5">
+            <h2>Description</h2>
+            <p>The Kindle Paperwhite is a lightweight e-reader that combines reading and entertainment. With its high-resolution display, you can enjoy your favorite books in crisp detail.</p>
+            <p>Get access to millions of books, newspapers and magazines on the go.</p>
+        </section>
+        
+        <section class="_38x4VQ">
+            <h2>Customer Reviews</h2>
+            <div class="col-6-12">
+                <img src="https://via.placeholder.com/150x150?text=Rohan+Review+i1" alt="Rohan Review Image">
+                <p><span class="_38x4VQ">4.5/5 (10 reviews)</span> - Rohan, 24 Feb 2023</p>
+            </div>
+            
+            <div class="col-6-12">
+                <img src="https://via.placeholder.com/150x150?text=Aisha+Review+i1" alt="Aisha Review Image">
+                <p><span class="_38x4VQ">4.2/5 (5 reviews)</span> - Aisha, 15 Jan 2023</p>
+            </div>
+            
+            <div class="col-6-12">
+                <img src="https://via.placeholder.com/150x150?text=Rahul+Review+i1" alt="Rahul Review Image">
+                <p><span class="_38x4VQ">4.8/5 (20 reviews)</span> - Rahul, 01 Jan 2023</p>
+            </div>
+        </section>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        .rating-star {
+            width: 150px;
+        }
+    </style>
+    <script>
+        $(document).ready(function() {
+            var rating = 4.5;
+            var starRating = '';
+            
+            for (var i = 1; i <= Math.floor(rating); i++) {
+                if (i === Math.floor(rating)) {
+                    starRating += '<span class="rating-star" style="width: 150px;">&starf;</span>';
+                } else {
+                    starRating += '<span class="rating-star"></span>';
+                }
+            }
+            
+            $('.rating-star').eq(Math.floor(rating) - 1).addClass('active');
+        });
+    </script>
+</body>
+</html>
+```
